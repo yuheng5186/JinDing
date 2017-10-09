@@ -2,8 +2,8 @@
 //  ViewController.m
 //  JDCar
 //
-//  Created by Mac WuXinLing on 2017/10/7.
-//  Copyright © 2017年 QW. All rights reserved.
+//  Created by apple on 2017/10/9.
+//  Copyright © 2017年 apple. All rights reserved.
 //
 
 #import "ViewController.h"
