@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoDataView" customModule="Driver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_Normal" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-bP-FLF">
+                    <rect key="frame" x="107.5" y="70.5" width="117" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="117" id="UXL-cf-2lT"/>
+                        <constraint firstAttribute="height" constant="104" id="hJl-a9-Efj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据,点击可重新加载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOF-mu-gDJ">
+                    <rect key="frame" x="86" y="184.5" width="161.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEW-Tz-Y1M">
+                    <rect key="frame" x="107.5" y="70.5" width="117" height="131"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.46274509800000002" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="noDataButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yle-rh-9K0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dOF-mu-gDJ" firstAttribute="centerX" secondItem="5Me-bP-FLF" secondAttribute="centerX" id="3Kg-ti-ZSq"/>
+                <constraint firstItem="5Me-bP-FLF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IXd-PN-E7Q"/>
+                <constraint firstItem="wEW-Tz-Y1M" firstAttribute="top" secondItem="5Me-bP-FLF" secondAttribute="top" id="RWf-22-zKQ"/>
+                <constraint firstItem="wEW-Tz-Y1M" firstAttribute="leading" secondItem="5Me-bP-FLF" secondAttribute="leading" id="TqT-U5-FAS"/>
+                <constraint firstItem="wEW-Tz-Y1M" firstAttribute="trailing" secondItem="5Me-bP-FLF" secondAttribute="trailing" id="Vw4-ou-Jje"/>
+                <constraint firstItem="dOF-mu-gDJ" firstAttribute="top" secondItem="5Me-bP-FLF" secondAttribute="bottom" constant="10" id="aXR-sp-99p"/>
+                <constraint firstItem="dOF-mu-gDJ" firstAttribute="bottom" secondItem="wEW-Tz-Y1M" secondAttribute="bottom" id="tND-ie-NVF"/>
+                <constraint firstItem="5Me-bP-FLF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="zWM-Er-0e3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadImageView" destination="5Me-bP-FLF" id="vGT-3x-3lr"/>
+                <outlet property="noDataBtn" destination="wEW-Tz-Y1M" id="3XQ-pg-rFB"/>
+                <outlet property="noDataLabel" destination="dOF-mu-gDJ" id="dol-zH-qG7"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="-102.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_Normal" width="275" height="354"/>
+    </resources>
+</document>
