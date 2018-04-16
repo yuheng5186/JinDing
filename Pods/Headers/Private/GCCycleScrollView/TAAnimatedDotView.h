@@ -1,1 +1,0 @@
-../../../GCCycleScrollView/Pod/Classes/PageControl/TAAnimatedDotView.h
