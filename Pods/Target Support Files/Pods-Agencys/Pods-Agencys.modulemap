@@ -1,6 +1,0 @@
-framework module Pods_Agencys {
-  umbrella header "Pods-Agencys-umbrella.h"
-
-  export *
-  module * { export * }
-}
